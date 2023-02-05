@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://byui-cse.github.io/cse111-course/lesson02/check.html -->
+<html lang="es" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./02 Punto de control_ funciones de llamada_files/css2">
+    <link rel="stylesheet" href="./02 Punto de control_ funciones de llamada_files/reset.css">
+    <link rel="stylesheet" href="./02 Punto de control_ funciones de llamada_files/style.css">
+    <script defer="" src="./02 Punto de control_ funciones de llamada_files/main.js"></script>
+    <title>02 Punto de control: funciones de llamada</title>
+    <link rel="icon" type="image/png" href="https://byui-cse.github.io/cse111-course/site/icons/logo.png">
+    <link rel="canonical" href="https://byui-cse.github.io/cse111-course/lesson02/check.html">
+    <link rel="prev" type="text/html" href="https://byui-cse.github.io/cse111-course/lesson02/prepare.html">
+    <link rel="next" type="text/html" href="https://byui-cse.github.io/cse111-course/lesson02/teach.html">
+    <meta name="description" content="A small programming assignment to check understanding of writing Python code to call a function">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Article",
+        "headline": "Checkpoint: Review Python",
+        "description": "A small programming assignment to check understanding of writing Python code to call a function",
+        "educationalUse": "assignment",
+        "copyrightNotice": "Copyright © 2019, Brigham Young University–Idaho. All rights reserved.",
+        "datePublished": "2019-11-15",
+        "dateModified": "2023-01-06"
+    }
+    </script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./02 Punto de control_ funciones de llamada_files/translateelement.css"></head>
+
+<body class="light">
+<header><a class="byuiLogo" title="Sitio web de BYU-Idaho" href="https://www.byui.edu/"><img alt="Logotipo de BYU-Idaho" src="./02 Punto de control_ funciones de llamada_files/byui-logo.svg"></a><h2><a title="CSE 111 Contenido" href="https://byui-cse.github.io/cse111-course/index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CSE 111 | </font><font style="vertical-align: inherit;">Programación con Funciones</font></font></a></h2><img class="menuIcon" title="Haga clic para abrir el menú de navegación" alt="Haga clic para abrir el menú de navegación" src="./02 Punto de control_ funciones de llamada_files/bars.svg"></header><nav class="menu closed"><ul><li class="light" title="Change to light mode"><img alt="Change to light mode" src="./02 Punto de control_ funciones de llamada_files/sun.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modo de luz</font></font></li><li class="dark" title="Change to dark mode"><img alt="Change to dark mode" src="./02 Punto de control_ funciones de llamada_files/moon.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Modo oscuro</font></font></li><li class="first" title="View list of contents for CSE 111"><a href="https://byui-cse.github.io/cse111-course/index.html"><img alt="View list of contents for CSE 111" src="./02 Punto de control_ funciones de llamada_files/list.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contenido</font></font></a></li><li title="View previous document"><a href="https://byui-cse.github.io/cse111-course/lesson02/prepare.html"><img alt="View previous document" src="./02 Punto de control_ funciones de llamada_files/arrow-left.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Documento anterior</font></font></a></li><li title="View next document"><a href="https://byui-cse.github.io/cse111-course/lesson02/teach.html"><img alt="View next document" src="./02 Punto de control_ funciones de llamada_files/arrow-right.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Siguiente documento</font></font></a></li><li class="first" title="Search the CSE 111 content"><a href="https://byui-cse.github.io/cse111-course/index.html#search"><img alt="Search the CSE 111 content" src="./02 Punto de control_ funciones de llamada_files/magnify-glass.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buscar</font></font></a></li><li title="Get help for CSE 111"><a href="https://byui-cse.github.io/cse111-course/overview/help.html"><img alt="Get help for CSE 111" src="./02 Punto de control_ funciones de llamada_files/question.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ayudar</font></font></a></li><li class="first" title="Download a PDF that contains
+all CSE 111 HTML content"><a download="" href="https://byui-cse.github.io/cse111-course/combined/cse111_prepare_content.pdf"><img alt="Download a PDF that contains
+all CSE 111 HTML content" src="./02 Punto de control_ funciones de llamada_files/file-pdf.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.archivo PDF</font></font></a></li><li title="Download a zip file that
+contains all CSE 111 content"><a download="" href="https://byui-cse.github.io/cse111-course/combined/cse111_content.zip"><img alt="Download a zip file that
+contains all CSE 111 content" src="./02 Punto de control_ funciones de llamada_files/file-zip.svg"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.archivo zip</font></font></a></li></ul></nav><article>
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">02 Punto de control: funciones de llamada</font></font></h1>
+
+    <h2 id="purpose"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Propósito </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Compruebe su comprensión de cómo llamar a las funciones integradas de Python y las funciones que se encuentran en un módulo estándar de Python.</font></font></p>
+
+    <h2 id="problem"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Declaración del problema </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En nuestra economía mundial moderna, muchos artículos se fabrican en grandes fábricas, luego se empacan en cajas y se envían a centros de distribución y tiendas minoristas. </font><font style="vertical-align: inherit;">Una pregunta común para los empleados que empacan artículos es "¿Cuántas cajas necesitamos?"</font></font></p>
+
+    <h2 id="assign"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tarea </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Una empresa de fabricación necesita un programa que ayude a sus empleados a empaquetar los artículos fabricados en cajas para su envío. </font><font style="vertical-align: inherit;">Escriba un programa de Python llamado </font></font><code>boxes.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">que le pida al usuario dos números enteros:</font></font></p>
+    <ol>
+        <li><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el número de artículos fabricados</font></font></div></li>
+        <li><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el número de artículos que el usuario empacará por caja</font></font></div></li>
+    </ol>
+
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Su programa debe calcular e imprimir el número de cajas necesarias para guardar los artículos. </font><font style="vertical-align: inherit;">Este debe ser un número entero. </font><font style="vertical-align: inherit;">Tenga en cuenta que la última caja puede estar empacada con menos artículos que las otras cajas.</font></font></p>
+
+    <h2 id="helpful_docs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Documentación útil </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <ul class="mixed long">
+        <li class="tutorial"><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">El </font></font><a href="https://byui-cse.github.io/cse111-course/lesson02/prepare.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contenido de preparación</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> de esta lección explica cómo llamar a una función y un método.</font></font></div></li>
+
+        <li class="reference"><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La </font></font><a href="https://docs.python.org/3/library/math.html#math.ceil"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">función math.ceil()</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+        redondea un número al entero más cercano que sea mayor o igual a un número.</font></font></div></li>
+    </ul>
+
+    <h2 id="testing"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Procedimiento de prueba </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verifique que su programa funcione correctamente siguiendo cada paso de este procedimiento de prueba:</font></font></p>
+    <ol class="test">
+        <li><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejecute su programa e ingrese las entradas que se muestran a continuación. </font><font style="vertical-align: inherit;">Asegúrese de que la salida de su programa coincida con la salida a continuación.
+</font></font><pre class="console" style="margin-left:-1.5em" title="Ventana de terminales"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt; python cajas.py</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Ingrese el número de artículos: </font></font><span class="input" title="Entrada del usuario"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Ingrese el número de artículos por caja: </font></font><span class="input" title="Entrada del usuario"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></span><font></font>
+<font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Para 8 artículos, empacando 5 artículos en cada caja, necesitará 2 cajas.</font></font><font></font>
+<font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&gt; python cajas.py</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Introduzca el número de artículos: </font></font><span class="input" title="Entrada del usuario"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+Introduzca el número de artículos por caja: </font></font><span class="input" title="Entrada del usuario"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></span><font></font>
+<font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+Para 25 artículos, empacando 4 artículos en cada caja, necesitará 7 cajas.</font></font></pre>
+        </div></li>
+    </ol>
+
+    <h2 id="solution"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solución de muestra </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando termine su programa, vea la </font></font><a class="solution" href="https://byui-cse.github.io/cse111-course/overview/solution.html?file=lesson02/check_solution.py" title="Ver check_solution.py"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">solución de muestra </font></font></a> <a download="" title="Descargar check_solution.py" href="https://byui-cse.github.io/cse111-course/lesson02/check_solution.py"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[↓]</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> para esta tarea para comparar su solución con esa. </font><font style="vertical-align: inherit;">Antes de mirar la solución de muestra, debe trabajar para completar este programa de punto de control. </font><font style="vertical-align: inherit;">Sin embargo, si ha trabajado en él durante al menos una hora y aún tiene problemas, no dude en utilizar la solución de muestra para ayudarlo a terminar su programa.</font></font></p>
+
+    <h2 id="ponder"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reflexionar </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Durante esta tarea, escribió código que llama a la
+     </font></font><code>math.ceil()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">función. </font><font style="vertical-align: inherit;">¿Qué hizo la
+     </font></font><code>math.ceil()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">función en su programa? </font><font style="vertical-align: inherit;">Si la
+     </font></font><code>math.ceil()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">función no existiera, ¿habría sido más difícil completar esta tarea?</font></font></p>
+
+    <h2 id="submit"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sumisión </font></font><span class="copy" title="Copiar URL al portapapeles"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></span></h2>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando termine, informe su progreso en el cuestionario I‑Learn asociado.</font></font></p>
+</article>
+
+
+<div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./02 Punto de control_ funciones de llamada_files/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span></div><div class="started-activity-container"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><footer><div><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Última modificación 2023-01-06 </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Copyright © 2019, Brigham Young University–Idaho. </font><font style="vertical-align: inherit;">Todos los derechos reservados.</font></font></div><img class="up" alt="Desplácese hasta la parte superior de este documento" title="Desplácese hasta la parte superior de este documento" src="./02 Punto de control_ funciones de llamada_files/arrow-up-long.svg"></footer><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
