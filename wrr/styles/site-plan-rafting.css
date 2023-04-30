@@ -41,9 +41,9 @@ nav a {
     padding: 1rem;
 }
 nav a:link, nav a:visited {
-    color: #070808; 
+    color: #F8F7FF; 
 }
 nav a:hover {
-    color: #070808;
+    color:  #FF784F;
     background-color: #FCFC62;
 }
