@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+:root {
+    --primary-color:    #FCFC62;
+    --secondary-color:  #F8F7FF;
+    --accent-color: #1098F7;
+    --accent2-color:    #FF784F;
+
+    --heading-font: Raleway;
+    --paragraph-font: Raleway;
+
+    --nav-background-color: #FCFC62;
+    --nav-link-color:   #F8F7FF;
+    --nav-hover-link-color: #FF784F;
+    --nav-hover-background-color:   #1098F7;
+}
+body {
+    font-family: Raleway;
+    max-width: 960px;
+    padding: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: ; Raleway;
+    color: #070808;
+}
+header {
+    padding: 20px;
+    background-color:   #1098F7;
+}
+p {
+    padding: 25px;
+}
+nav {
+    background-color: #1098F7;
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a {
+    display: block;
+    color:  #FF784F;
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited {
+    color: #070808; 
+}
+nav a:hover {
+    color: #070808;
+    background-color: #FCFC62;
+}
