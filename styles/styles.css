@@ -57,7 +57,7 @@ main img {
     float: right;
 }
 aside h2 {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    position: absolute;
+    top: 725px;
+    left: 690px;
 }
