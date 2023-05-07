@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+:root {
+    --primary-color:    #FCFC62;
+    --secondary-color:  #F8F7FF;
+    --accent1-color: #1098F7;
+    --accent2-color:    #FF784F;
+
+    --heading-font: Raleway;
+    --paragraph-font: Raleway;
+
+    --nav-background-color: #FCFC62;
+    --nav-link-color:   #F8F7FF;
+    --nav-hover-link-color: #FF784F;
+    --nav-hover-background-color:   #1098F7;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1 {
+    position: absolute;
+}
+article {
+    position: absolute;
+}
+article img {
+    float: right;
+}
