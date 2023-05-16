@@ -13,18 +13,38 @@
     --nav-hover-link-color: #FF784F;
     --nav-hover-background-color:   #1098F7;
 }
+.hero {
+    position: relative;
+}
 .hero img {
-    position: absolute;
     display: block;
     width: 100%;
     height: auto;
 }
-h1 {
-    position: absolute;
+#hero_img {
+    float:right;
+    width: 200px;
+    height: auto;
+    margin: 25px;
 }
-article {
+.hero h1 {
     position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 99.9%;
+    background-color: #1098F7;
+    color: white;
+    opacity: 0.8;
 }
-article img {
-    float: right;
+.hero article {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    top: 100px;
+    left: 100px;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 15px;
+    background-color: #F8F7FF;
+    opacity: 0.8;
 }
