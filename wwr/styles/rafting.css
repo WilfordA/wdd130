@@ -15,6 +15,8 @@
 }
 .hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .hero img {
     display: block;
@@ -22,10 +24,11 @@
     height: auto;
 }
 #hero_img {
-    float:right;
-    width: 200px;
+    float: right;
+    width: 17%;
     height: auto;
-    margin: 25px;
+    margin: 25px 25px 25px 0;
+    flex: 1;
 }
 .hero h1 {
     position: absolute;
@@ -38,6 +41,8 @@
 }
 .hero article {
     position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
     bottom: 100px;
     right: 100px;
     top: 100px;
@@ -45,8 +50,11 @@
     font-weight: bold;
     text-align: start;
     padding-left: 15px;
-    background-color: #F8F7FF;
-    opacity: 0.8;
+    background-color: rgba(248, 247, 255, 0.8);
+}
+#hero_p {
+    display: flex;
+    flex: 5;
 }
 header {
     margin: 1rem auto;
