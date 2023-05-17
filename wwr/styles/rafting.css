@@ -16,7 +16,7 @@
 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 .hero img {
     display: block;
@@ -35,18 +35,18 @@
     top: 10px;
     text-align: center;
     width: 99.9%;
-    background-color: #1098F7;
+    background-color: rgb(255, 120, 79);
     color: white;
     opacity: 0.8;
 }
 .hero article {
     position: absolute;
-    display: flex;
     flex-direction: row-reverse;
+    display: flex;
     bottom: 100px;
-    right: 100px;
+    right: 50px;
     top: 100px;
-    left: 100px;
+    left: 50px;
     font-weight: bold;
     text-align: start;
     padding-left: 15px;
@@ -61,22 +61,23 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
+    max-width: 100%;
+    background-color: rgb(16, 152, 247, 0.9);
 }
 .logo-rafting {
-    margin: 0 0.25rem 0 4rem;
+    margin: 0 0.25rem -4px 8rem;
     width: 250px;
     height: auto;
 }
 .nav-header {
-    text-align: right;
-    margin: 0 40px 0 0;
+    text-align: center;
+    margin: 0 150px 0 0;
     display: flex;
 }
 .nav-header a {
     display: block;
-    color: navy;
+    color: white;
+    font-weight: bolder;
     padding: 20px;
     align-items: center;
     justify-content: space-around;
@@ -84,7 +85,65 @@ header {
     flex: 1 100%;
 }
 .nav-header a:hover {
-    color: #1098F7;
+    color: #1E1E24;
     font-weight: 700;
     text-decoration: underline;
+}
+.history h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.history div {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-column-gap: 20px;
+    padding: 0 30px;
+}
+.history img {
+    width: 100%;
+}
+.history p {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 20px;
+}
+.adventures h2 {
+    grid-column: 1 / 6;
+    text-align: center;
+}
+.adventures img {
+    width: 85%;
+    grid-column-gap: 15px;
+}
+.adventures figure {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: rgb(16, 152, 247, 0.9);
+}
+footer p {
+    text-align: center;
+    grid-column: 2;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+.sociallinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+}
+.sociallinks a img {
+    margin: 0 5px;
+    width: 50%;
 }
