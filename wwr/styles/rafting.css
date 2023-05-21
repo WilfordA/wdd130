@@ -147,3 +147,22 @@ footer p {
     margin: 0 5px;
     width: 50%;
 }
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:
+    0 20px;
+}
+.employees h2 {
+    grid-column: 1 / 6;
+    text-align: center;
+}
+.employees img {
+    width: 85%;
+    grid-column-gap: 15px;
+}
+.employees figure {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
