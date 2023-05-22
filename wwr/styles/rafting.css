@@ -152,6 +152,7 @@ footer p {
 }
 h1 {
     margin: 20px 20px 20px 20px;
+    font-weight: bold;
 }
 .employees {
     display: grid;
@@ -170,7 +171,6 @@ h1 {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
-    border: solid blue;
 }
 .form {
     font-family: Raleway;
@@ -178,7 +178,7 @@ h1 {
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background-color: #eee;
     display: grid;
 }
@@ -187,7 +187,7 @@ fieldset {
     grid-gap: .5rem;
     margin: 1rem;
     border: 1px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    padding: 0 auto;
 }
 input {
     padding: 0.5rem;
