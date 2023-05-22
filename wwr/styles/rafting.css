@@ -195,6 +195,14 @@ input {
     padding: 0.5rem;
     font-size: 1rem;
 }
+#fullname, #useremail {
+    width: 350px;
+}
+#message {
+    text-decoration: none;
+    text-align: normal;
+    height: 30px;
+}
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
