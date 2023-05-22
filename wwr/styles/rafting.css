@@ -13,6 +13,9 @@
     --nav-hover-link-color: #FF784F;
     --nav-hover-background-color:   #1098F7;
 }
+body {
+    font-family: Raleway;
+}
 .hero {
     position: relative;
     display: flex;
@@ -147,11 +150,13 @@ footer p {
     margin: 0 5px;
     width: 50%;
 }
+h1 {
+    margin: 20px 20px 20px 20px;
+}
 .employees {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin:
-    0 20px;
+    margin: 20px 20px 20px 20px;
 }
 .employees h2 {
     grid-column: 1 / 6;
@@ -165,4 +170,62 @@ footer p {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    border: solid blue;
+}
+.form {
+    font-family: Raleway;
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    margin-top: auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: green;
+}
+fieldset {
+    color: navy;
+    font-weight: bold;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 20px 20px 20px;
+}
+#information {
+    margin-left: 135px;
+}
+#map, figcaption {
+    display: grid;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
 }
