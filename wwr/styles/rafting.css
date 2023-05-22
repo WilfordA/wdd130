@@ -188,6 +188,8 @@ fieldset {
     margin: 1rem;
     border: 1px rgba(0, 0, 0, 0.2);
     padding: 0 auto;
+    color: navy;
+    font-weight: bold;
 }
 input {
     padding: 0.5rem;
@@ -210,10 +212,6 @@ button {
 }
 button:hover {
     background-color: green;
-}
-fieldset {
-    color: navy;
-    font-weight: bold;
 }
 .contact {
     display: grid;
