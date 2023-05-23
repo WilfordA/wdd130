@@ -140,6 +140,13 @@ footer p {
     color: white;
     font-weight: bolder;
 }
+.wireframe {
+    grid-column: 6;
+    color: white;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-right: 25px;
+}
 .sociallinks {
     display: flex;
     align-items: flex-end;
