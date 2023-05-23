@@ -198,7 +198,7 @@ fieldset {
     grid-gap: .7rem;
     margin: 1rem;
     border: 1px rgba(0, 0, 0, 0.2);
-    padding: 0 auto;
+    padding: 0;
     color: navy;
     font-weight: bold;
 }
@@ -209,9 +209,9 @@ input {
 #fullname, #useremail {
     width: 400px;
 }
-#message {
+#message, textarea {
     font-family: Raleway;
-    text-align: normal;
+    text-align: start;
     height: 50px;
 }
 input[type="checkbox"] {
