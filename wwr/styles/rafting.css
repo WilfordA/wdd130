@@ -210,9 +210,9 @@ input {
     width: 400px;
 }
 #message {
-    text-decoration: none;
+    font-family: Raleway;
     text-align: normal;
-    height: 30px;
+    height: 50px;
 }
 input[type="checkbox"] {
     width: 22px;
