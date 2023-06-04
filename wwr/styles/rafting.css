@@ -128,6 +128,12 @@ header {
     margin-left: 10px;
     margin-right: 10px;
 }
+.adventures figcaption {
+    font-size: medium;
+    width: 70%;
+    margin: 10px 40px;
+    text-align: center;
+}
 footer {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -308,4 +314,28 @@ th, td {
 #lh, #cs, #tp {
     background-color: rgb(255, 120, 79);
     opacity: 0.8;
+}
+.whitewr {
+    position: relative;
+    display: flex;
+    flex-direction: column
+}
+.whitewr img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.whitewr h1 {
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    width: 99.9%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0.8;
+    font-size: 40px;
+}
+.images h2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
 }
